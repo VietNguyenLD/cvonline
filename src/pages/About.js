@@ -15,7 +15,7 @@ const AboutPage = () => {
             <p>
               My name is Nguyen Quoc Viet. I’m 24 years old. I have just
               graduated from university in May 2020 with the major in computer
-              science . I got 1 years experience as developer web application .
+              science. I got 1 years experience as developer web application .
               I like soccer and swimming. I’m a careful and hard-working person.
               I’m eager to learn new things and willing to work in team. I
               easily adapt to with new working environment and take initiative
@@ -57,7 +57,12 @@ const AboutPage = () => {
                 </a>
               </li>
               <li>
-                <a className="btn-about" href="/#">
+                <a
+                  className="btn-about"
+                  rel="noreferrer"
+                  href="./template/NGUYEN_QUOC_VIET.pdf"
+                  target="_blank"
+                >
                   Download Resume
                 </a>
               </li>

@@ -1,8 +1,13 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { Suspense } from "react";
+import { Link, Switch, useLocation } from "react-router-dom";
 import Footer from "./Footer";
+
+import navs from "../nav";
+
 const Header = () => {
   let location = useLocation();
+
+  const loading = <h1>Loadzzz</h1>;
 
   console.log(location);
   return (
@@ -10,44 +15,25 @@ const Header = () => {
       <div className="header" id="myHeader">
         <div className="navbar">
           <div className="img-container">
-            <h1>Philip Watson</h1>
+            <h1>Thor Nguyen</h1>
             <img
               id="img-face"
-              src="https://watson-vcard.netlify.app/img/profile-img.jpg"
-              alt=""
+              src="./image/avartar.jpeg"
+              alt="avatar"
+              width="199"
+              height="199"
+              style={{ objectFit: "cover" }}
             />
           </div>
           <ul>
-            <li className="menu active-menu" id="home">
-              <Link to="/home">
-                <i className="lnr lnr-home"></i>
-                home
-              </Link>
-            </li>
-            <li className="menu" id="about-me">
-              <Link to="/about">
-                <i class="lnr lnr-user"></i>
-                about me
-              </Link>
-            </li>
-            <li className="menu" id="resume">
-              <Link to="/resume">
-                <i class="lnr lnr-license"></i>
-                resume
-              </Link>
-            </li>
-            <li className="menu" id="portfolio">
-              <a href="#page-portfolio">
-                <i className="lnr lnr-briefcase"></i>
-                project
-              </a>
-            </li>
-            <li className="menu" id="contact">
-              <a href="#page-contact">
-                <i className="lnr lnr-envelope"></i>
-                contact
-              </a>
-            </li>
+            {navs.map((nav, index) => (
+              <li key={index} className={location.pathname === nav.path ? 'menu active-menu' : 'menu'} id="home">
+                <Link to={nav.path}>
+                  <i className={nav.icon}></i>
+                  {nav.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <Footer />

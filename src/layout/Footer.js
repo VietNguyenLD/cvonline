@@ -20,7 +20,25 @@ const Footer = () => {
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/vi%E1%BB%87t-nguy%E1%BB%85n-qu%E1%BB%91c-705373190/"
               >
-                <i class="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://join.skype.com/invite/YDsk65Uv0WPI"
+              >
+               <i className="fab fa-skype"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/VietNguyenLD/cvonline"
+              >
+                <i className="fab fa-github"></i>
               </a>
             </li>
           </ul>
