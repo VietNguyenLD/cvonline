@@ -1,6 +1,10 @@
 import React from "react";
-
+import { Link, useLocation } from "react-router-dom";
+import Footer from "./Footer";
 const Header = () => {
+  let location = useLocation();
+
+  console.log(location);
   return (
     <>
       <div className="header" id="myHeader">
@@ -15,65 +19,38 @@ const Header = () => {
           </div>
           <ul>
             <li className="menu active-menu" id="home">
-              <a href="#page-home">
-                {" "}
+              <Link to="/home">
                 <i className="lnr lnr-home"></i>
                 home
-              </a>
+              </Link>
             </li>
             <li className="menu" id="about-me">
-              <a href="#page-about-me">
-                {" "}
-                <i className="lnr lnr-user"></i> about me
-              </a>
+              <Link to="/about">
+                <i class="lnr lnr-user"></i>
+                about me
+              </Link>
             </li>
             <li className="menu" id="resume">
-              <a href="#page-resume">
-                {" "}
-                <i className="lnr lnr-license"></i>
+              <Link to="/resume">
+                <i class="lnr lnr-license"></i>
                 resume
-              </a>
+              </Link>
             </li>
             <li className="menu" id="portfolio">
               <a href="#page-portfolio">
-                {" "}
                 <i className="lnr lnr-briefcase"></i>
-                portfolio
+                project
               </a>
             </li>
             <li className="menu" id="contact">
               <a href="#page-contact">
-                {" "}
                 <i className="lnr lnr-envelope"></i>
                 contact
               </a>
             </li>
           </ul>
         </div>
-        <footer className="footer">
-            <ul className="social">
-                <li>
-                    <a href="https://www.facebook.com/thanhvi.vo.9081/"><i className="fab fa-facebook-square"></i></a>
-                </li>
-                <li>
-                    <a href="/"><i className="fab fa-twitter-square"></i></a>
-                </li>
-                <li>
-                    <a href="/"><i className="fab fa-youtube-square"></i></a>
-                </li>
-                <li>
-                    <a href="/"><i className="fab fa-dribbble-square"></i></a>
-                </li>
-                <li>
-                    <a href="/"><i className="fab fa-behance-square"></i></a>
-                </li>
-            </ul>
-            <p className="copy">
-                2018 © Cosmos-Themes.
-                <br/>
-                All Right Reserved.
-            </p>
-        </footer>
+        <Footer />
       </div>
     </>
   );

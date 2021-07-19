@@ -46,10 +46,6 @@ body {
 }
 
 
-/* hiden section */
-.resume, .contact, .about-me, .portfolio {
-    display: none;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
@@ -320,7 +316,7 @@ img {
 /* design home section */
 
 .home{
-    background-image: linear-gradient(to right,rgb(120, 120, 121) 0%,rgb(86, 194, 236) 100%),url(./bora-bora-685303_1920.jpg);
+    background-image: linear-gradient(to right,rgb(120, 120, 121) 100%,rgb(86, 194, 236) 100%),url('../image/home-bg.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -356,7 +352,7 @@ img {
 }
 
 #typed {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #00A3E1;
 }
 
 
@@ -396,6 +392,10 @@ img {
 
 .personal-information {
     flex: calc(100%/3);
+}
+
+.personal-information ul li {
+    padding-bottom: 15px;
 }
 
 .introduce {
@@ -522,6 +522,10 @@ img {
     font-family: 'Roboto', sans-serif;
     font-size: 14.5px;
     line-height: 22px;
+}
+
+.service .service-items {
+   width: 33%;
 }
 
 .lnr-laptop::before, .lnr-eye::before, .lnr-laptop-phone::before, .lnr-camera::before {

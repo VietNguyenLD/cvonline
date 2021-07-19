@@ -8,7 +8,7 @@ const HomePage = () => {
         <canvas id="field"></canvas>
         <div className="home-content">
           <h1>
-            Nguyễn Quốc<span> Việt</span>
+            Nguyễn Quốc<span style={{ paddingLeft: "10px"}}> Việt</span>
           </h1>
           <div>
             <span>I am a </span>
