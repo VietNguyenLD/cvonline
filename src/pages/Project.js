@@ -3,7 +3,7 @@ import MainLayout from "../layout/Main";
 const Project = () => {
   return (
     <MainLayout>
-      <section className="page portfolio" id="page-portfolio">
+      <section className="page portfolio" id="page-portfolio" >
         <div className="topic">
           <h1>Project.</h1>
           <span className="lnr lnr-briefcase"></span>
