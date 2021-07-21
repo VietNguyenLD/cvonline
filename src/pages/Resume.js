@@ -9,7 +9,7 @@ const Resume = () => {
           <span className="lnr lnr-license"></span>
         </div>
         <div className="exp-edu">
-          <div className="experience">
+          <div className="experience animation fadeLeft">
             <div className="subheading">
               <h3>experience</h3>
             </div>
@@ -33,7 +33,7 @@ const Resume = () => {
               </li>
             </ul>
           </div>
-          <div className="education">
+          <div className="education animation fadeRight">
             <div className="subheading">
               <h3>education</h3>
             </div>
@@ -64,7 +64,7 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-        <div className="des-cod">
+        <div className="des-cod animation fadeBottom">
           <div className="design">
             <div className="subheading">
               <h3>FRONTEND SKILLS</h3>

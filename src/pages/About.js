@@ -9,7 +9,7 @@ const AboutPage = () => {
           <h1>About Me.</h1>
           <span className="lnr lnr-user"></span>
         </div>
-        <div className="information">
+        <div className="information animation fadeLeft">
           <div className="about introduce">
             <h3>Web Developer</h3>
             <p>
@@ -72,7 +72,7 @@ const AboutPage = () => {
         <div className="subheading">
           <h3>Skill</h3>
         </div>
-        <div className="service">
+        <div className="service animation fadeRight">
           <div className="service-items">
             <span className="lnr lnr-laptop"></span>
             <h4>Backend Development</h4>
